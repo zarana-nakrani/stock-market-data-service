@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     KAFKA_PRICE_EVENTS_TOPIC: str = "price-events"
     KAFKA_SYMBOL_AVERAGES_TOPIC: str = "symbol-averages"
     # Market Data Providers
-    ALPHA_VANTAGE_API_KEY: Optional[str]
-    FINNHUB_API_KEY: Optional[str]
+    ALPHA_VANTAGE_API_KEY: Optional[str] = "Q2XYCDE5TMJ618FT"
+    FINNHUB_API_KEY: Optional[str] = "d170f9hr01qkv5jdpfo0d170f9hr01qkv5jdpfog"
     ALPHA_VANTAGE_API_URL: str = "https://www.alphavantage.co/query"
     FINNHUB_API_URL: str = "https://finnhub.io/api/v1/quote"
 
