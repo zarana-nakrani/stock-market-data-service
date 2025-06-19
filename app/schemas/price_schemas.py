@@ -17,7 +17,7 @@ class PriceRequest(BaseModel):
     provider: Optional[str] = None
 
 class PollRequest(BaseModel):
-    symbols: list[str] = Field(..., min_items=1, max_items=50)
+    symbols: list[str] 
     interval: int = Field(60, ge=10, le=3600)  # 10 seconds to 1 hour
     provider: Optional[str] = None
 

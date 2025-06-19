@@ -3,9 +3,9 @@ from typing import Optional
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost/postgres"
+    DATABASE_URL: str = "postgresql://user:password@postgres:5432/market_data"
     # Kafka
-    KAFKA_BOOTSTRAP_SERVERS: str = "localhost:9092"
+    KAFKA_BOOTSTRAP_SERVERS: str = "kafka:9092"
     KAFKA_PRICE_EVENTS_TOPIC: str = "price-events"
     KAFKA_SYMBOL_AVERAGES_TOPIC: str = "symbol-averages"
     # Market Data Providers

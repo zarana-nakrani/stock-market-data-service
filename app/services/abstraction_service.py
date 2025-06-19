@@ -4,7 +4,7 @@ import yfinance as yf
 import requests
 import json
 from datetime import datetime
-from app.core.config import settings
+from core.config import settings
 
 class DataProvider(ABC):
     @abstractmethod
